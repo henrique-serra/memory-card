@@ -3,8 +3,22 @@ import './styles.css';
 export default function Header({ title, description }) {
   return (
     <header className='header'>
-      <h1 className='title'>{title}</h1>
-      <p className='description'>{description}</p>
+      <div className='header-content'>
+        <div className='header-left'>
+          <h1 className='title'>{title}</h1>
+          <p className='description'>{description}</p>
+        </div>
+        <div className='header-right'>
+          <div className='score-item'>
+            <span className='score-label'>Score:</span>
+            <span className='score-value'>0</span>
+          </div>
+          <div className='score-item'>
+            <span className='score-label'>Best score:</span>
+            <span className='score-value'>0</span>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };

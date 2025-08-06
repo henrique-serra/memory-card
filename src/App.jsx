@@ -1,5 +1,4 @@
 import './styles.css';
-import { useEffect } from 'react';
 import Header from './Header';
 import CardsGrid from './CardsGrid';
 
@@ -23,8 +22,8 @@ const App = () => {
 
   // Dados do header
   const headerData = {
-    title: 'Galeria de Paisagens',
-    description: 'Explore uma coleção cuidadosamente selecionada de paisagens deslumbrantes de todo o mundo. Cada imagem captura a beleza natural e a diversidade dos ambientes terrestres, desde montanhas majestosas até praias paradisíacas.'
+    title: 'Memory Game',
+    description: "Get points by clicking on an image but don't click on any more than once!",
   };
 
   return (
