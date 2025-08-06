@@ -1,9 +1,28 @@
+import { useState, useEffect } from 'react';
 import './styles.css';
 import Header from './Header';
 import CardsGrid from './CardsGrid';
+import { useRandomPokemons } from './useRandomPokemons';
 
 // Componente Principal
 const App = () => {
+
+  const {
+    pokemons,
+    loading,
+    error,
+    progress,
+    refetch,
+    fetchMore,
+    cacheStats,
+    clearCache
+  } = useRandomPokemons(12, {
+    enableProgress: true,
+    autoFetch: true
+  });
+
+  console.log(pokemons);
+
   // Dados dos cards
   const cardsData = [
     { id: 1, title: 'Mountain Landscape', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop' },
