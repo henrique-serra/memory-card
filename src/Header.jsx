@@ -1,6 +1,6 @@
 import './styles.css';
 
-export default function Header({ title, description }) {
+export default function Header({ title, description, score, bestScore }) {
   return (
     <header className='header'>
       <div className='header-content'>
@@ -11,11 +11,11 @@ export default function Header({ title, description }) {
         <div className='header-right'>
           <div className='score-item'>
             <span className='score-label'>Score:</span>
-            <span className='score-value'>0</span>
+            <span className='score-value'>{score}</span>
           </div>
           <div className='score-item'>
             <span className='score-label'>Best score:</span>
-            <span className='score-value'>0</span>
+            <span className='score-value'>{bestScore}</span>
           </div>
         </div>
       </div>

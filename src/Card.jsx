@@ -1,9 +1,9 @@
 import './styles.css';
 
 // Componente Card individual
-export default function Card({ pokemon }) {
+export default function Card({ pokemon, onPokemonClick }) {
   return (
-    <div className='card'>
+    <div className='card' onClick={() => onPokemonClick(pokemon)}>
       <div className='image-container'>
         <img 
           src={pokemon.images.classic} 
