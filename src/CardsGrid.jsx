@@ -1,12 +1,12 @@
 import './styles.css';
 import Card from './Card';
 
-export default function CardsGrid({ cards }) {
+export default function CardsGrid({ pokemons }) {
   return (
     <main className='main'>
       <div className='cards-grid'>
-        {cards.map((card) => (
-          <Card key={card.id} card={card} />
+        {pokemons.map((pokemon) => (
+          <Card key={pokemon.id} card={pokemon.name} />
         ))}
       </div>
     </main>

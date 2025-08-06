@@ -51,7 +51,7 @@ const App = () => {
         title={headerData.title} 
         description={headerData.description} 
       />
-      <CardsGrid cards={cardsData} />
+      <CardsGrid pokemons={pokemons} />
     </div>
   );
 };
