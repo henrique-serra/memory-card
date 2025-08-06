@@ -11,7 +11,7 @@ export default function Card({ card }) {
           className='card-image'
         />
       </div>
-      <div className='cardContent'>
+      <div className='card-content'>
         <h3 className='card-title'>{card.title}</h3>
       </div>
     </div>
