@@ -240,7 +240,7 @@ export function useRandomPokemons(count = 12, options = {}) {
     return () => {
       abortController.abort();
     };
-  }, [count, autoFetch]);
+  }, []);
 
   return {
     // Estados
