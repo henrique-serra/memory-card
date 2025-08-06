@@ -118,8 +118,11 @@
 
 /* Hover effect do card */
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.15);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(79, 70, 229, 0.3),
+    0 0 40px rgba(79, 70, 229, 0.1);
+  border-top-color: #6366f1;
 }
 
 /* Container da imagem */

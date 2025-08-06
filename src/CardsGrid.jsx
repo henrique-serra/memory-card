@@ -6,7 +6,7 @@ export default function CardsGrid({ pokemons }) {
     <main className='main'>
       <div className='cards-grid'>
         {pokemons.map((pokemon) => (
-          <Card key={pokemon.id} card={pokemon.name} />
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
     </main>
